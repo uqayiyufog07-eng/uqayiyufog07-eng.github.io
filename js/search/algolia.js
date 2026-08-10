@@ -118,7 +118,7 @@ window.addEventListener("load", () => {
     container: "#algolia-hits",
     templates: {
       item(data) {
-        const rawLink = data.permalink ? data.permalink : GLOBAL_CONFIG.root + data.path;
+        const rawLink = data.permalink ? data.permalink : data.url ? data.url : GLOBAL_CONFIG.root + data.path;
         // 验证链接安全性，防止 javascript: 协议注入
         const link = /^(https?:\/\/|\/)/i.test(rawLink) ? escapeHtml(rawLink) : escapeHtml("/" + rawLink);
         const result = data._highlightResult;
@@ -129,9 +129,8 @@ window.addEventListener("load", () => {
         setTimeout(() => {
           document.querySelector("#algolia-search .ais-SearchBox-input").focus();
         }, 200);
-        // result.title.value 已被 Algolia 处理包含 <mark> 高亮标签，保持原样
-        // 如果标题不存在则使用转义后的原标题或默认值
-        const titleHtml = result.title?.value || escapeHtml(data.title) || "no-title";
+        // 兼容 Algolia 文章索引（headline）和标准 Hexo Algolia 索引（title）
+        const titleHtml = result.headline?.value || result.title?.value || escapeHtml(data.headline) || escapeHtml(data.title) || "no-title";
         return `
           <a href="${link}" class="algolia-hit-item-link">
           <span class="algolia-hits-item-title">${titleHtml}</span>
