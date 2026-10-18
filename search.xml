@@ -1,6 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>一封写给六班的数字情书｜我用一整个周末，给毕业班做了一座&quot;会动&quot;的纪念网站</title>
+    <url>/2026/08/10/class/</url>
+    <content><![CDATA[<blockquote>
+<p>项目地址：<a href="https://class.laoqian303.top/">https://class.laoqian303.top</a><br>源码仓库：<a href="https://github.com/uqayiyufog07-eng/graduation-website">https://github.com/uqayiyufog07-eng/graduation-website</a></p>
+</blockquote>
+<hr>
+<h2 id="缘起：毕业那天，我想留下点不一样的东西"><a href="#缘起：毕业那天，我想留下点不一样的东西" class="headerlink" title="缘起：毕业那天，我想留下点不一样的东西"></a>缘起：毕业那天，我想留下点不一样的东西</h2><p>毕业典礼结束的那个傍晚，教室黑板上还留着没擦干净的名字，窗外是六月潮湿的风。我突然意识到：六年同窗，就要散落在不同的城市、不同的学校、不同的命运里了。</p>
+<p>拍照？太轻。写同学录？太旧。</p>
+<p>我想做一座<strong>永远在线</strong>的小屋——把每一位老师的笑、每一位同学的脸、每一段藏在抽屉里的悄悄话，都装进去，让它们在互联网的边缘节点上，被风一吹，就一直亮着。</p>
+<p>于是，「永远的六班」诞生了：<a href="https://class.laoqian303.top/">https://class.laoqian303.top</a></p>
+<hr>
+<h2 id="我希望它是什么样子"><a href="#我希望它是什么样子" class="headerlink" title="我希望它是什么样子"></a>我希望它是什么样子</h2><p>毕业纪念网站这件事，圈子里已有不少前辈做过。但我不想做一个 PPT 式的页面：照片一摆、名字一列、寄语一抄，结束。</p>
+<p>我希望它——</p>
+<ul>
+<li><strong>有温度</strong>：每一张照片都能”活”过来，每一句悄悄话都像真的被装进信封里寄出；</li>
+<li><strong>有科技感</strong>：典礼当晚，大屏能被全班的祝福”刷屏”，弹幕一条条划过，像新年烟花；</li>
+<li><strong>能永久保留</strong>：哪怕十年后大家各奔东西，只要域名续费，这个小屋就还在。</li>
+</ul>
+<p>带着这三条执念，我开干了。</p>
+<hr>
+<h2 id="设计语言：新粗野主义-×-手绘插画"><a href="#设计语言：新粗野主义-×-手绘插画" class="headerlink" title="设计语言：新粗野主义 × 手绘插画"></a>设计语言：新粗野主义 × 手绘插画</h2><p>整个网站的视觉走的是 <strong>Neobrutalism（新粗野主义）</strong> 路线——粗黑描边、撞色块、硬阴影、不做作。但在粗野的骨架上，我铺了一层手绘插画的皮肤：圆角的便签、心形火漆印章、拍立得相框……</p>
+<p>这种”粗野 + 柔软”的反差，正是少年感的样子——外表满不在乎，内里全是真心。</p>
+<p>颜色上，我准备了两套主题：</p>
+<ul>
+<li><strong>梦幻暮光磨砂玻璃</strong>：晚自习窗外的紫粉色天光；</li>
+<li><strong>粗野主义插画</strong>：课桌涂鸦的彩色记号笔。</li>
+</ul>
+<p>主题可以在前台一键切换，每一位访客都能找到属于自己的那束光。</p>
+<hr>
+<h2 id="四个核心板块，每一块都有故事"><a href="#四个核心板块，每一块都有故事" class="headerlink" title="四个核心板块，每一块都有故事"></a>四个核心板块，每一块都有故事</h2><h3 id="🎓-恩师风采与同学录"><a href="#🎓-恩师风采与同学录" class="headerlink" title="🎓 恩师风采与同学录"></a>🎓 恩师风采与同学录</h3><p>不是简单的名片墙。每位老师、每位同学都有自己的档案页：所教科目、成长历程、荣誉标签、联系方式、毕业寄语。像一本可以被翻很多年的小册子。</p>
+<h3 id="🎨-AI-二次元头像定制（这是我最得意的部分）"><a href="#🎨-AI-二次元头像定制（这是我最得意的部分）" class="headerlink" title="🎨 AI 二次元头像定制（这是我最得意的部分）"></a>🎨 AI 二次元头像定制（这是我最得意的部分）</h3><p>接入了<strong>豆包 Seedream 5.0</strong> 大模型。上传一张证件照，AI 会把它重绘成清新动漫插画头像。展示页面上，原图 &#x2F; AI 插画可以一键双态切换——</p>
+<blockquote>
+<p>一秒是穿校服的你，一秒是二次元世界里那个更明亮的你。</p>
+</blockquote>
+<p>技术上这块踩了不少坑：原图要分块转 Base64 喂给模型、生成结果要再下载回 R2 持久化、还要保证前端切换不卡。但看到第一个同学的头像被 AI “画” 出来的瞬间，我觉得这些都值了。</p>
+<h3 id="🚀-现场实时弹幕墙"><a href="#🚀-现场实时弹幕墙" class="headerlink" title="🚀 现场实时弹幕墙"></a>🚀 现场实时弹幕墙</h3><p>毕业晚会当晚，大屏上挂着这个网站。同学们掏出手机扫码，发出的祝福会以彩色弹幕的形式<strong>实时</strong>划过大屏幕——没有刷新、没有轮询，全靠腾讯云开发 TCB 的 <code>.watch()</code> 长连接推流。</p>
+<p>那一刻，全班同学的祝福在大屏上此起彼伏，比任何 PPT 都震撼。</p>
+<h3 id="💌-悄悄话留言板（心意信封）"><a href="#💌-悄悄话留言板（心意信封）" class="headerlink" title="💌 悄悄话留言板（心意信封）"></a>💌 悄悄话留言板（心意信封）</h3><p>这是我最舍不得删的板块。</p>
+<p>每一句悄悄话都被装进一个<strong>拟物化的实体信封</strong>里：信封会随着鼠标轻微 3D 倾斜，像被风托着；封口是一枚我亲手用 SVG 重画的心形火漆印章；点开发送时，纸屑喷洒（Confetti）会从屏幕上方炸开——</p>
+<blockquote>
+<p>像毕业那天，终于鼓起勇气把信递出去的瞬间。</p>
+</blockquote>
+<p>未登录用户会被温柔引导，已登录用户可以直接投递。一切都按”真心”来设计。</p>
+<h3 id="🖼️-时光相册与拍立得画廊"><a href="#🖼️-时光相册与拍立得画廊" class="headerlink" title="🖼️ 时光相册与拍立得画廊"></a>🖼️ 时光相册与拍立得画廊</h3><p>拍立得式照片墙，支持灯箱大图浏览。管理员上传的照片同样可以一键 AI 插画加工，把日常瞬间变成艺术纪念。</p>
+<hr>
+<h2 id="技术架构：为什么这么选"><a href="#技术架构：为什么这么选" class="headerlink" title="技术架构：为什么这么选"></a>技术架构：为什么这么选</h2><p>整个项目我没用 React&#x2F;Vue 之类的框架，前台是<strong>原生 ES6+ Vanilla JS</strong>。原因很简单：</p>
+<blockquote>
+<p>毕业纪念网站应该像一封信，而不是一个 App。它要轻、要快、要在任何破旧手机上都能秒开。</p>
+</blockquote>
+<p>后端则用了三家云服务的组合拳：</p>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>选型</th>
+<th>干什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实时数据库</td>
+<td><strong>腾讯云开发 TCB NoSQL</strong></td>
+<td>存同学录、弹幕、悄悄话、画廊，靠 <code>.watch()</code> 实现实时推流</td>
+</tr>
+<tr>
+<td>静态托管</td>
+<td><strong>Cloudflare Pages</strong></td>
+<td>全球 CDN 边缘节点分发，海外访问也飞快</td>
+</tr>
+<tr>
+<td>计算 &amp; 存储</td>
+<td><strong>Cloudflare Workers + R2 + KV</strong></td>
+<td>图片上传、R2 读写、豆包 AI 图生图代理、KV 状态缓存</td>
+</tr>
+</tbody></table>
+<p>为什么不全用一家？因为我希望这个小屋<strong>真的能活十年</strong>——三家服务都免费额度充足、生态稳定，任何一家出问题，迁移成本都可控。这是我能想到的、最浪漫的”工程化保险”。</p>
+<hr>
+<h2 id="一些藏在细节里的小心思"><a href="#一些藏在细节里的小心思" class="headerlink" title="一些藏在细节里的小心思"></a>一些藏在细节里的小心思</h2><ul>
+<li><strong>光标彩虹拖尾</strong>：鼠标划过，留下一道彩虹，像小时候在课桌上划过的彩色笔；</li>
+<li><strong>点击爆炸特效</strong>：每一次点击都有粒子炸开，让浏览本身变成一种游戏；</li>
+<li><strong>纸张坠落物理算法</strong>：悄悄话信封的摆动不是 CSS 动画硬写，而是模拟纸张在微风中的物理运动；</li>
+<li><strong>3D Parallax 视差</strong>：信封会随鼠标方向轻微倾斜，像真的被光打过；</li>
+<li><strong>完全响应式</strong>：从 320px 的小屏到 4K 大屏，都好看。</li>
+</ul>
+<hr>
+<h2 id="部署它，你也能复制一座小屋"><a href="#部署它，你也能复制一座小屋" class="headerlink" title="部署它，你也能复制一座小屋"></a>部署它，你也能复制一座小屋</h2><p>整个项目已开源在 GitHub，README 里有完整的部署指南：</p>
+<ol>
+<li>配置腾讯云开发 TCB 数据库（4 个集合）；</li>
+<li>部署 Cloudflare Worker（R2 + KV + 豆包 API Key）；</li>
+<li>改 <code>js/config.js</code> 里的三个地址；</li>
+<li>把静态文件丢到 Cloudflare Pages。</li>
+</ol>
+<p><strong>十分钟，你也能给你的班级搭一座永远在线的纪念屋。</strong></p>
+<hr>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>域名 <code>class.laoqian303.top</code> 我会续十年。</p>
+<p>希望十年后，当某位同学在某个深夜加班的间隙，无意间打开这个网址——</p>
+<p>弹幕还能划过，<br>信封还能打开，<br>AI 头像里的那个少年还会冲他笑，<br>晚自习窗外的紫粉色天光，还会亮着。</p>
+<p><strong>六班，毕业快乐。</strong></p>
+<blockquote>
+<p>🌐 逛逛这座小屋：<a href="https://class.laoqian303.top/">https://class.laoqian303.top</a><br>💻 源码与部署指南：<a href="https://github.com/uqayiyufog07-eng/graduation-website">https://github.com/uqayiyufog07-eng/graduation-website</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>项目</category>
+      </categories>
+      <tags>
+        <tag>网站开发</tag>
+        <tag>Cloudflare</tag>
+        <tag>腾讯云</tag>
+        <tag>AI</tag>
+        <tag>毕业纪念</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用 Cloudflare Pages Functions 给博客音乐馆接入网易云会员音乐</title>
+    <url>/2026/08/08/cloudflare-pages-netease-music/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>博客用 Hexo + 安知鱼主题搭建，部署在 Cloudflare Pages。安知鱼主题内置了音乐馆功能，左下角有一个悬浮播放器，还有一个独立的 <code>/music/</code> 页面。音乐数据通过 MetingJS 从网易云拉取。</p>
+<p>问题是：<strong>所有歌都只有 45 秒试听片段</strong>。</p>
+<p>原因是 MetingJS 默认走的是第三方公共 API，匿名请求网易云，VIP &#x2F; 版权歌曲只给试听。要听完整版，就得带上你自己的网易云会员 Cookie 去请求 API。</p>
+<p>但 Cookie 是账号登录凭证，绝不能写进前端代码或 Git 仓库。</p>
+<h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>在 Cloudflare Pages 项目根目录放一个 Pages Function，做一层”中间人”：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">浏览器 → /api/meting (Pages Function) → 网易云 API</span><br><span class="line">                    ↑ Cookie 从环境变量读取，不暴露给前端</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>MetingJS 请求同源的 <code>/api/meting</code>，不跨域</li>
+<li>Cookie 只存在 Cloudflare Pages 的加密机密里，代码和构建产物里都看不到</li>
+<li>音频 URL 自动从 HTTP 转 HTTPS，避免混合内容问题</li>
+</ul>
+<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="1-创建-Pages-Function"><a href="#1-创建-Pages-Function" class="headerlink" title="1. 创建 Pages Function"></a>1. 创建 Pages Function</h3><p>在项目根目录新建 <code>functions/api/meting.js</code>：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">DEFAULT_API_BASE</span> = <span class="string">&quot;https://netease-cloud-music-api.fe-mm.com&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">DEFAULT_LEVEL</span> = <span class="string">&quot;exhigh&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">CACHE_SECONDS</span> = <span class="number">300</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">json</span>(<span class="params">data, status = <span class="number">200</span></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Response</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(data), &#123;</span><br><span class="line">    status,</span><br><span class="line">    <span class="attr">headers</span>: &#123;</span><br><span class="line">      <span class="string">&quot;content-type&quot;</span>: <span class="string">&quot;application/json; charset=utf-8&quot;</span>,</span><br><span class="line">      <span class="string">&quot;cache-control&quot;</span>: <span class="string">`public, max-age=<span class="subst">$&#123;CACHE_SECONDS&#125;</span>`</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">apiBase</span>(<span class="params">env</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (env.<span class="property">NETEASE_API_BASE</span> || <span class="variable constant_">DEFAULT_API_BASE</span>).<span class="title function_">replace</span>(<span class="regexp">/\/$/</span>, <span class="string">&quot;&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">requestNetease</span>(<span class="params">env, path, params = &#123;&#125;</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> url = <span class="keyword">new</span> <span class="title function_">URL</span>(<span class="string">`<span class="subst">$&#123;apiBase(env)&#125;</span><span class="subst">$&#123;path&#125;</span>`</span>);</span><br><span class="line">  <span class="keyword">const</span> cookie = env.<span class="property">NETEASE_COOKIE</span>;</span><br><span class="line"></span><br><span class="line">  <span class="title class_">Object</span>.<span class="title function_">entries</span>(params).<span class="title function_">forEach</span>(<span class="function">(<span class="params">[key, value]</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (value !== <span class="literal">undefined</span> &amp;&amp; value !== <span class="literal">null</span> &amp;&amp; value !== <span class="string">&quot;&quot;</span>) &#123;</span><br><span class="line">      url.<span class="property">searchParams</span>.<span class="title function_">set</span>(key, <span class="title class_">String</span>(value));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> headers = &#123; <span class="string">&quot;user-agent&quot;</span>: <span class="string">&quot;Mozilla/5.0&quot;</span> &#125;;</span><br><span class="line">  <span class="keyword">if</span> (cookie) headers.<span class="property">cookie</span> = cookie;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> response = <span class="keyword">await</span> <span class="title function_">fetch</span>(url, &#123; headers &#125;);</span><br><span class="line">  <span class="keyword">if</span> (!response.<span class="property">ok</span>) &#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">`网易云 API 请求失败：<span class="subst">$&#123;response.status&#125;</span> <span class="subst">$&#123;path&#125;</span>`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> response.<span class="title function_">json</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>核心逻辑分三种请求类型：</p>
+<ul>
+<li><code>type=playlist</code>：先拿歌单详情，再批量请求歌曲详情和播放地址</li>
+<li><code>type=song</code>：单曲获取详情和播放地址</li>
+<li><code>type=lyric</code>：获取歌词文本</li>
+</ul>
+<p>返回格式兼容 MetingJS 协议，每首歌包含 <code>name</code>、<code>artist</code>、<code>url</code>、<code>cover</code>、<code>lrc</code> 五个字段。</p>
+<h3 id="2-修改主题配置"><a href="#2-修改主题配置" class="headerlink" title="2. 修改主题配置"></a>2. 修改主题配置</h3><p>在 <code>_config.anzhiyu.yml</code> 中把 <code>meting_api</code> 指向同源接口：</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="attr">option:</span></span><br><span class="line">    <span class="attr">meting_api:</span> <span class="string">/api/meting?server=:server&amp;type=:type&amp;id=:id&amp;r=:r</span></span><br></pre></td></tr></table></figure>
+
+<p>这样 MetingJS 就会请求你博客自己的 <code>/api/meting</code>，而不是第三方公共 API。</p>
+<h3 id="3-配置歌单-ID"><a href="#3-配置歌单-ID" class="headerlink" title="3. 配置歌单 ID"></a>3. 配置歌单 ID</h3><p>安知鱼主题有<strong>三个地方</strong>会引用歌单 ID，必须全部改掉：</p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>_config.anzhiyu.yml</code></td>
+<td>主题用户配置，<code>nav_music.id</code></td>
+</tr>
+<tr>
+<td><code>themes/anzhiyu/_config.yml</code></td>
+<td>主题默认配置，会被合并</td>
+</tr>
+<tr>
+<td><code>themes/anzhiyu/source/js/utils.js</code></td>
+<td>前端 JS 里硬编码的 fallback</td>
+</tr>
+<tr>
+<td><code>themes/anzhiyu/scripts/events/merge_config.js</code></td>
+<td>构建时合并逻辑的默认值</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>踩坑提醒</strong>：只改 <code>_config.anzhiyu.yml</code> 是不够的。主题的 <code>merge_config.js</code> 在构建时会用默认值覆盖你的配置，<code>utils.js</code> 里还有个硬编码的 fallback。三处必须全改，否则构建产物里还是旧歌单。</p>
+</blockquote>
+<h3 id="4-配置-Cloudflare-Pages-环境变量"><a href="#4-配置-Cloudflare-Pages-环境变量" class="headerlink" title="4. 配置 Cloudflare Pages 环境变量"></a>4. 配置 Cloudflare Pages 环境变量</h3><p>在 Cloudflare Pages 控制台 → <strong>设置 → 变量和机密</strong> 中添加：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>NETEASE_COOKIE</code></td>
+<td>加密机密</td>
+<td><code>MUSIC_U=你的Cookie值</code></td>
+</tr>
+<tr>
+<td><code>NETEASE_API_BASE</code></td>
+<td>普通变量</td>
+<td><code>https://你的API地址</code></td>
+</tr>
+<tr>
+<td><code>NETEASE_AUDIO_LEVEL</code></td>
+<td>普通变量</td>
+<td><code>exhigh</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>Cookie 格式是 <code>MUSIC_U=xxxx</code>，用等号不是冒号。Cookie 不写进代码，只存在 Cloudflare 加密机密里。</p>
+</blockquote>
+<h3 id="5-部署"><a href="#5-部署" class="headerlink" title="5. 部署"></a>5. 部署</h3><p>使用 Wrangler CLI 直接部署，不需要在 Cloudflare 控制台设置构建命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 构建</span></span><br><span class="line">npm run build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 部署（会同时上传 public 静态文件和 functions 目录）</span></span><br><span class="line">npx wrangler pages deploy public \</span><br><span class="line">  --project-name 你的项目名 \</span><br><span class="line">  --branch main</span><br></pre></td></tr></table></figure>
+
+<p>Wrangler 会自动识别项目根目录下的 <code>functions/</code> 文件夹，把 Pages Functions 一起编译上传。</p>
+<h2 id="上游-API-的选择"><a href="#上游-API-的选择" class="headerlink" title="上游 API 的选择"></a>上游 API 的选择</h2><p>Pages Function 需要通过 HTTPS 访问网易云 API。有几个选项：</p>
+<ol>
+<li><strong>公共 API</strong>：如 <code>https://netease-cloud-music-api.fe-mm.com</code>，开箱即用，但不受你控制</li>
+<li><strong>自建 API</strong>：在你的服务器上部署 NeteaseCloudMusicApi，配 HTTPS 域名和 443 端口，再用 Cloudflare DNS 代理</li>
+</ol>
+<blockquote>
+<p>注意：Cloudflare Pages Functions 发出的 <code>fetch</code> 请求<strong>必须是 HTTPS</strong>。如果你的上游是裸 <code>http://IP:3000</code>，Cloudflare 会返回 522，Function 直接 502。</p>
+</blockquote>
+<h2 id="安全要点"><a href="#安全要点" class="headerlink" title="安全要点"></a>安全要点</h2><ul>
+<li><strong>Cookie 永远不进仓库</strong>：只通过 Cloudflare Pages 加密机密注入，代码里只有 <code>env.NETEASE_COOKIE</code> 的引用</li>
+<li><strong>Cookie 可选</strong>：Function 在没有配置 Cookie 时也能匿名工作，配置后自动带上会员凭证</li>
+<li><strong>音频 URL 强制 HTTPS</strong>：网易云返回的音频地址有时是 HTTP，Function 会自动替换成 HTTPS，避免浏览器混合内容拦截</li>
+<li><strong>缓存策略</strong>：响应带 5 分钟 <code>cache-control</code>，减少对上游的重复请求</li>
+</ul>
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>博客音乐馆加载你自己的网易云歌单，播放完整版歌曲，前端代码里看不到任何 Cookie。</p>
+<p>部署命令一条就够：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm run build &amp;&amp; npx wrangler pages deploy public \</span><br><span class="line">  --project-name 你的项目名 --branch main</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>建站</category>
+      </categories>
+      <tags>
+        <tag>Cloudflare</tag>
+        <tag>Hexo</tag>
+        <tag>网易云音乐</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>文章模板：Markdown 语法 + 安知鱼标签插件速查</title>
     <url>/2026/08/07/anzhiyu-post-template/</url>
     <content><![CDATA[<!-- 说明：这是一篇可直接复制改造的模板文。Front-matter 按需要保留字段即可；正文演示了 Markdown 基础/进阶语法和安知鱼全部常用标签插件。 -->
@@ -235,121 +466,123 @@
       </tags>
   </entry>
   <entry>
-    <title>用 Cloudflare Pages Functions 给博客音乐馆接入网易云会员音乐</title>
-    <url>/2026/08/08/cloudflare-pages-netease-music/</url>
-    <content><![CDATA[<span id="more"></span>
+    <title>把组卷网试卷导出成 PDF 和可编辑 Word：一个零依赖油猴脚本的实现</title>
+    <url>/2026/10/18/zujuanjs/</url>
+    <content><![CDATA[<blockquote>
+<p>一句话：在组卷网试卷详情页注入一个浮动面板，一键把试卷导出成 PDF 或 Word（可编辑文字＋局部图片 &#x2F; 整题图片两种模式），全程本地运行，不上传任何数据。项目已开源：<a href="https://github.com/uqayiyufog07-eng/zujuan-export">https://github.com/uqayiyufog07-eng/zujuan-export</a></p>
+</blockquote>
+<span id="more"></span>
 
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>博客用 Hexo + 安知鱼主题搭建，部署在 Cloudflare Pages。安知鱼主题内置了音乐馆功能，左下角有一个悬浮播放器，还有一个独立的 <code>/music/</code> 页面。音乐数据通过 MetingJS 从网易云拉取。</p>
-<p>问题是：<strong>所有歌都只有 45 秒试听片段</strong>。</p>
-<p>原因是 MetingJS 默认走的是第三方公共 API，匿名请求网易云，VIP &#x2F; 版权歌曲只给试听。要听完整版，就得带上你自己的网易云会员 Cookie 去请求 API。</p>
-<p>但 Cookie 是账号登录凭证，绝不能写进前端代码或 Git 仓库。</p>
-<h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>在 Cloudflare Pages 项目根目录放一个 Pages Function，做一层”中间人”：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">浏览器 → /api/meting (Pages Function) → 网易云 API</span><br><span class="line">                    ↑ Cookie 从环境变量读取，不暴露给前端</span><br></pre></td></tr></table></figure>
-
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>组卷网（zujuan.xkw.com）是中小学老师组卷、找题的常用站点。试卷页能在线看、也能打印，但真要拿来用的时候处处别扭：</p>
 <ul>
-<li>MetingJS 请求同源的 <code>/api/meting</code>，不跨域</li>
-<li>Cookie 只存在 Cloudflare Pages 的加密机密里，代码和构建产物里都看不到</li>
-<li>音频 URL 自动从 HTTP 转 HTTPS，避免混合内容问题</li>
+<li><strong>浏览器直接打印</strong>，会把导航栏、登录框、下载&#x2F;收藏&#x2F;分享按钮一起打进去，还得手调打印设置；</li>
+<li><strong>下载 Word &#x2F; PDF</strong> 要会员、要积分，答案解析还经常是图片，想整理进自己的题库得逐题截图；</li>
+<li>想「干净地」把一份试卷连答案带解析收进本地，官方途径基本没有好体验。</li>
 </ul>
-<h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><h3 id="1-创建-Pages-Function"><a href="#1-创建-Pages-Function" class="headerlink" title="1. 创建 Pages Function"></a>1. 创建 Pages Function</h3><p>在项目根目录新建 <code>functions/api/meting.js</code>：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">DEFAULT_API_BASE</span> = <span class="string">&quot;https://netease-cloud-music-api.fe-mm.com&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">DEFAULT_LEVEL</span> = <span class="string">&quot;exhigh&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">CACHE_SECONDS</span> = <span class="number">300</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">json</span>(<span class="params">data, status = <span class="number">200</span></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Response</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(data), &#123;</span><br><span class="line">    status,</span><br><span class="line">    <span class="attr">headers</span>: &#123;</span><br><span class="line">      <span class="string">&quot;content-type&quot;</span>: <span class="string">&quot;application/json; charset=utf-8&quot;</span>,</span><br><span class="line">      <span class="string">&quot;cache-control&quot;</span>: <span class="string">`public, max-age=<span class="subst">$&#123;CACHE_SECONDS&#125;</span>`</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">apiBase</span>(<span class="params">env</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (env.<span class="property">NETEASE_API_BASE</span> || <span class="variable constant_">DEFAULT_API_BASE</span>).<span class="title function_">replace</span>(<span class="regexp">/\/$/</span>, <span class="string">&quot;&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">requestNetease</span>(<span class="params">env, path, params = &#123;&#125;</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> url = <span class="keyword">new</span> <span class="title function_">URL</span>(<span class="string">`<span class="subst">$&#123;apiBase(env)&#125;</span><span class="subst">$&#123;path&#125;</span>`</span>);</span><br><span class="line">  <span class="keyword">const</span> cookie = env.<span class="property">NETEASE_COOKIE</span>;</span><br><span class="line"></span><br><span class="line">  <span class="title class_">Object</span>.<span class="title function_">entries</span>(params).<span class="title function_">forEach</span>(<span class="function">(<span class="params">[key, value]</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (value !== <span class="literal">undefined</span> &amp;&amp; value !== <span class="literal">null</span> &amp;&amp; value !== <span class="string">&quot;&quot;</span>) &#123;</span><br><span class="line">      url.<span class="property">searchParams</span>.<span class="title function_">set</span>(key, <span class="title class_">String</span>(value));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> headers = &#123; <span class="string">&quot;user-agent&quot;</span>: <span class="string">&quot;Mozilla/5.0&quot;</span> &#125;;</span><br><span class="line">  <span class="keyword">if</span> (cookie) headers.<span class="property">cookie</span> = cookie;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> response = <span class="keyword">await</span> <span class="title function_">fetch</span>(url, &#123; headers &#125;);</span><br><span class="line">  <span class="keyword">if</span> (!response.<span class="property">ok</span>) &#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">`网易云 API 请求失败：<span class="subst">$&#123;response.status&#125;</span> <span class="subst">$&#123;path&#125;</span>`</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> response.<span class="title function_">json</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>核心逻辑分三种请求类型：</p>
+<p>于是有了这个脚本：打开试卷详情页（形如 <code>https://zujuan.xkw.com/11p3514663.html</code>），右上角浮出一个小面板，勾选要不要答案解析，点按钮，拿到的就是一份干净的 PDF 或者一份<strong>文字可编辑</strong>的 Word。</p>
+<p>它最初是一个 <code>javascript:</code> 书签脚本，后来转成油猴脚本并迭代到 v13，本文按最终版（13.2.0）介绍。</p>
+<h2 id="为什么是油猴脚本"><a href="#为什么是油猴脚本" class="headerlink" title="为什么是油猴脚本"></a>为什么是油猴脚本</h2><p>选型上其实没怎么犹豫：</p>
 <ul>
-<li><code>type=playlist</code>：先拿歌单详情，再批量请求歌曲详情和播放地址</li>
-<li><code>type=song</code>：单曲获取详情和播放地址</li>
-<li><code>type=lyric</code>：获取歌词文本</li>
+<li><strong>纯本地运行</strong>：所有解析和导出逻辑都在浏览器里跑，不需要服务器，也不用把组卷网的登录 Cookie 交给任何第三方；</li>
+<li><strong>复用登录态</strong>：答案解析图片要登录后才看得到，脚本跑在页面上下文里，天然带着你的登录态，不用单独处理鉴权；</li>
+<li><strong>零外部依赖</strong>：html2canvas 1.4.1 整个内联进脚本（MIT 协议，保留版权头），不引 CDN，装一个脚本就能用，断网都能跑。</li>
 </ul>
-<p>返回格式兼容 MetingJS 协议，每首歌包含 <code>name</code>、<code>artist</code>、<code>url</code>、<code>cover</code>、<code>lrc</code> 五个字段。</p>
-<h3 id="2-修改主题配置"><a href="#2-修改主题配置" class="headerlink" title="2. 修改主题配置"></a>2. 修改主题配置</h3><p>在 <code>_config.anzhiyu.yml</code> 中把 <code>meting_api</code> 指向同源接口：</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="attr">option:</span></span><br><span class="line">    <span class="attr">meting_api:</span> <span class="string">/api/meting?server=:server&amp;type=:type&amp;id=:id&amp;r=:r</span></span><br></pre></td></tr></table></figure>
+<p>脚本头很诚实：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// ==UserScript==</span></span><br><span class="line"><span class="comment">// @name         组卷网试卷导出（书签版转油猴版）</span></span><br><span class="line"><span class="comment">// @version      13.2.0</span></span><br><span class="line"><span class="comment">// @match        https://zujuan.xkw.com/*</span></span><br><span class="line"><span class="comment">// @run-at       document-idle</span></span><br><span class="line"><span class="comment">// @noframes</span></span><br><span class="line"><span class="comment">// @grant        none</span></span><br><span class="line"><span class="comment">// ==/UserScript==</span></span><br></pre></td></tr></table></figure>
 
-<p>这样 MetingJS 就会请求你博客自己的 <code>/api/meting</code>，而不是第三方公共 API。</p>
-<h3 id="3-配置歌单-ID"><a href="#3-配置歌单-ID" class="headerlink" title="3. 配置歌单 ID"></a>3. 配置歌单 ID</h3><p>安知鱼主题有<strong>三个地方</strong>会引用歌单 ID，必须全部改掉：</p>
+<p><code>@grant none</code> + <code>@noframes</code>：不申请任何特权 API，只在顶层框架跑，安过一次就用。</p>
+<h2 id="整体结构"><a href="#整体结构" class="headerlink" title="整体结构"></a>整体结构</h2><p>脚本本体是一个 IIFE，大致四块：</p>
 <table>
 <thead>
 <tr>
-<th>文件</th>
-<th>说明</th>
+<th>模块</th>
+<th>职责</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>_config.anzhiyu.yml</code></td>
-<td>主题用户配置，<code>nav_music.id</code></td>
+<td>门禁 + 就绪等待</td>
+<td>只在试卷详情页运行，等正文渲染完成再启动</td>
 </tr>
 <tr>
-<td><code>themes/anzhiyu/_config.yml</code></td>
-<td>主题默认配置，会被合并</td>
+<td>浮动面板</td>
+<td>「包含答案解析」勾选、Word 模式切换、按钮与状态提示</td>
 </tr>
 <tr>
-<td><code>themes/anzhiyu/source/js/utils.js</code></td>
-<td>前端 JS 里硬编码的 fallback</td>
+<td>PDF 导出</td>
+<td>两条路：克隆弹窗打印 &#x2F; 当前页含解析打印</td>
 </tr>
 <tr>
-<td><code>themes/anzhiyu/scripts/events/merge_config.js</code></td>
-<td>构建时合并逻辑的默认值</td>
+<td>Word 导出</td>
+<td>手写 ZIP + WordprocessingML，混合 &#x2F; 整题图片两种模式</td>
 </tr>
 </tbody></table>
-<blockquote>
-<p><strong>踩坑提醒</strong>：只改 <code>_config.anzhiyu.yml</code> 是不够的。主题的 <code>merge_config.js</code> 在构建时会用默认值覆盖你的配置，<code>utils.js</code> 里还有个硬编码的 fallback。三处必须全改，否则构建产物里还是旧歌单。</p>
-</blockquote>
-<h3 id="4-配置-Cloudflare-Pages-环境变量"><a href="#4-配置-Cloudflare-Pages-环境变量" class="headerlink" title="4. 配置 Cloudflare Pages 环境变量"></a>4. 配置 Cloudflare Pages 环境变量</h3><p>在 Cloudflare Pages 控制台 → <strong>设置 → 变量和机密</strong> 中添加：</p>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>类型</th>
-<th>值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>NETEASE_COOKIE</code></td>
-<td>加密机密</td>
-<td><code>MUSIC_U=你的Cookie值</code></td>
-</tr>
-<tr>
-<td><code>NETEASE_API_BASE</code></td>
-<td>普通变量</td>
-<td><code>https://你的API地址</code></td>
-</tr>
-<tr>
-<td><code>NETEASE_AUDIO_LEVEL</code></td>
-<td>普通变量</td>
-<td><code>exhigh</code></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>Cookie 格式是 <code>MUSIC_U=xxxx</code>，用等号不是冒号。Cookie 不写进代码，只存在 Cloudflare 加密机密里。</p>
-</blockquote>
-<h3 id="5-部署"><a href="#5-部署" class="headerlink" title="5. 部署"></a>5. 部署</h3><p>使用 Wrangler CLI 直接部署，不需要在 Cloudflare 控制台设置构建命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 构建</span></span><br><span class="line">npm run build</span><br><span class="line"></span><br><span class="line"><span class="comment"># 部署（会同时上传 public 静态文件和 functions 目录）</span></span><br><span class="line">npx wrangler pages deploy public \</span><br><span class="line">  --project-name 你的项目名 \</span><br><span class="line">  --branch main</span><br></pre></td></tr></table></figure>
+<h3 id="门禁：只在试卷详情页运行"><a href="#门禁：只在试卷详情页运行" class="headerlink" title="门禁：只在试卷详情页运行"></a>门禁：只在试卷详情页运行</h3><p>组卷网同域下有很多页面（首页、搜索页、列表页），脚本用一条正则把非试卷页全部挡掉，直接 <code>return</code>，不弹窗、不注入、不改 DOM：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">PAPER_PATH</span> = <span class="regexp">/\/[^/]*\d+\.html$/</span>;</span><br><span class="line"><span class="keyword">if</span> (!<span class="variable constant_">PAPER_PATH</span>.<span class="title function_">test</span>(location.<span class="property">pathname</span>)) <span class="keyword">return</span>;</span><br></pre></td></tr></table></figure>
 
-<p>Wrangler 会自动识别项目根目录下的 <code>functions/</code> 文件夹，把 Pages Functions 一起编译上传。</p>
-<h2 id="上游-API-的选择"><a href="#上游-API-的选择" class="headerlink" title="上游 API 的选择"></a>上游 API 的选择</h2><p>Pages Function 需要通过 HTTPS 访问网易云 API。有几个选项：</p>
+<p>试卷详情页的路径以「数字.html」结尾，一条正则足够精确。</p>
+<h3 id="就绪等待：最多轮询-2-秒"><a href="#就绪等待：最多轮询-2-秒" class="headerlink" title="就绪等待：最多轮询 2 秒"></a>就绪等待：最多轮询 2 秒</h3><p><code>document-idle</code> 时试卷正文可能还在异步渲染。脚本每 80ms 轮询一次试卷容器选择器，出现即启动；等满 2 秒还等不到就静默跳过，只在控制台留一行日志：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="variable constant_">ROOTS</span> = [<span class="string">&#x27;article.exam-cnt&#x27;</span>, <span class="string">&#x27;article.paper-cnt&#x27;</span>, <span class="string">&#x27;div.qml_paper.ques-list&#x27;</span>, <span class="string">&#x27;div.qml_paper&#x27;</span>, <span class="string">&#x27;section#quesListBox&#x27;</span>, <span class="string">&#x27;.ques-list&#x27;</span>];</span><br><span class="line"><span class="keyword">const</span> <span class="title function_">hasPaper</span> = (<span class="params"></span>) =&gt; <span class="variable constant_">ROOTS</span>.<span class="title function_">some</span>(<span class="function"><span class="params">s</span> =&gt;</span> <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(s));</span><br></pre></td></tr></table></figure>
+
+<p>组卷网改版过多次，<code>.exam-cnt</code>、<code>.paper-cnt</code> 等新旧版式的容器选择器都列上，命中哪个用哪个——这也是它能在一个站点上活这么多版本的原因。</p>
+<h2 id="PDF-导出：两条路"><a href="#PDF-导出：两条路" class="headerlink" title="PDF 导出：两条路"></a>PDF 导出：两条路</h2><p><strong>不含解析</strong>走「克隆弹窗」：深拷贝试卷 DOM，剔掉 <code>script</code>、<code>iframe</code>、各种按钮和答案区，把页面所有 <code>&lt;link&gt;</code>&#x2F;<code>&lt;style&gt;</code> 一起搬进新窗口，加一个 <code>&lt;base&gt;</code> 保证图片相对路径不塌，再塞一个醒目的「打印 &#x2F; 另存为 PDF」按钮。用户点按钮走浏览器原生打印，选「另存为 PDF」即得一份干净文件。这条路还负责检测弹窗拦截，被拦了就明确提示。</p>
+<p><strong>含解析</strong>走「当前页打印」：答案解析是 <code>&lt;img&gt;</code>，弹窗克隆会丢跨域图片和懒加载状态，所以改成直接打印当前页。做法是给 source 到 <code>body</code> 的祖先链打上 <code>xkw-local-print-path</code> 标记类，配合一段 <code>@media print</code> 样式把祖先链之外的节点全部隐藏，同时藏掉站点自己的下载 &#x2F; 收藏 &#x2F; 分享区块；打印标题自动追加「-含答案解析」，<code>afterprint</code> 事件里清理现场，页面恢复原样。</p>
+<p>导出前还有两道安检，宁可报错停工，也不导出一份漏题的残卷：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> unloaded = [...source.<span class="title function_">querySelectorAll</span>(<span class="string">&#x27;.exam-list img&#x27;</span>)].<span class="title function_">find</span>(<span class="function"><span class="params">image</span> =&gt;</span> !image.<span class="property">complete</span> || !image.<span class="property">naturalWidth</span>);</span><br><span class="line"><span class="keyword">if</span> (unloaded) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">&#x27;试卷中的公式或图片尚未加载完成，请稍等页面显示完整后重试。&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (!image?.<span class="property">complete</span> || image.<span class="property">naturalWidth</span> &lt; <span class="number">1000</span> || image.<span class="property">naturalHeight</span> &lt; <span class="number">80</span>) &#123;</span><br><span class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">`第 <span class="subst">$&#123;i + <span class="number">1</span>&#125;</span> 题解析尚未正常显示。请先在网页打开“显示全部答案和解析”。`</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Word-导出：不依赖任何库"><a href="#Word-导出：不依赖任何库" class="headerlink" title="Word 导出：不依赖任何库"></a>Word 导出：不依赖任何库</h2><p>docx 本质是个 ZIP 包。脚本手写了一个 <strong>store 模式（不压缩）</strong> 的 ZIP 写入器：CRC32 查表、本地文件头、中央目录、EOCD，几十行搞定，不引 jszip、不引 docx.js：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> crcTable = <span class="title class_">Array</span>.<span class="title function_">from</span>(&#123;<span class="attr">length</span>:<span class="number">256</span>&#125;, <span class="function">(<span class="params">_,i</span>) =&gt;</span> &#123; <span class="keyword">for</span>(<span class="keyword">let</span> j=<span class="number">0</span>;j&lt;<span class="number">8</span>;j++) i=(i&amp;<span class="number">1</span>)?(<span class="number">0xedb88320</span>^(i&gt;&gt;&gt;<span class="number">1</span>)):(i&gt;&gt;&gt;<span class="number">1</span>); <span class="keyword">return</span> i&gt;&gt;&gt;<span class="number">0</span>; &#125;);</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">crc32</span>(<span class="params">bytes</span>) &#123; <span class="keyword">let</span> c=<span class="number">0xffffffff</span>; <span class="keyword">for</span>(<span class="keyword">const</span> x <span class="keyword">of</span> bytes) c=crcTable[(c^x)&amp;<span class="number">255</span>]^(c&gt;&gt;&gt;<span class="number">8</span>); <span class="keyword">return</span> (c^<span class="number">0xffffffff</span>)&gt;&gt;&gt;<span class="number">0</span>; &#125;</span><br></pre></td></tr></table></figure>
+
+<p>包里只有五个部件：<code>[Content_Types].xml</code>、<code>_rels/.rels</code>、<code>word/document.xml</code>、<code>word/_rels/document.xml.rels</code>，加上 <code>word/media/</code> 下的图片。<code>document.xml</code> 直接拼 WordprocessingML 字符串，<code>&lt;w:p&gt;</code> 段落、<code>&lt;w:r&gt;</code> 文本 run、<code>&lt;w:tbl&gt;</code> 表格全部手写。页面设置是标准 A4（11906×16838 twips），四边留白 900&#x2F;850。</p>
+<p>Word 提供两种模式，面板里可切换：</p>
+<ul>
+<li><strong>整题图片（兼容）</strong>：html2canvas 按 2.5 倍缩放把每题截成 canvas，超过一页高度时<strong>智能切图</strong>——在候选切割线附近 ±130px 的范围内逐行统计深色像素，挑「文字最稀疏」的一刀切下去，避免把一行字拦腰截断；</li>
+<li><strong>可编辑文字＋局部图片（默认）</strong>：把 DOM 转成 Word 原生段落和表格，只有公式、插图这类「图形叶子」才光栅化成图片。</li>
+</ul>
+<h2 id="混合模式：文字进-Word，公式变图片"><a href="#混合模式：文字进-Word，公式变图片" class="headerlink" title="混合模式：文字进 Word，公式变图片"></a>混合模式：文字进 Word，公式变图片</h2><p>这是整个脚本最核心的部分。判断走原生还是截图的，是一个 <code>complex()</code> 函数：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title function_">complex</span> = n =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (n.<span class="property">nodeType</span> !== <span class="number">1</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">  <span class="keyword">if</span> (n.<span class="title function_">matches</span>(<span class="string">&#x27;svg,canvas,math,mjx-container,.MathJax,.katex,ruby,object,embed,iframe&#x27;</span>)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">const</span> text = (n.<span class="property">textContent</span> || <span class="string">&#x27;&#x27;</span>).<span class="title function_">replace</span>(<span class="regexp">/\s+/g</span>, <span class="string">&#x27;&#x27;</span>).<span class="property">length</span>;</span><br><span class="line">  <span class="keyword">const</span> bg = <span class="title function_">getComputedStyle</span>(n).<span class="property">backgroundImage</span> || <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">  <span class="keyword">if</span> (<span class="regexp">/url\(/i</span>.<span class="title function_">test</span>(bg) &amp;&amp; text &lt; <span class="number">12</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  <span class="keyword">const</span> abs = [...n.<span class="property">children</span>].<span class="title function_">some</span>(<span class="function"><span class="params">c</span> =&gt;</span> [<span class="string">&#x27;absolute&#x27;</span>,<span class="string">&#x27;fixed&#x27;</span>].<span class="title function_">includes</span>(<span class="title function_">getComputedStyle</span>(c).<span class="property">position</span>));</span><br><span class="line">  <span class="keyword">return</span> abs &amp;&amp; (n.<span class="title function_">querySelector</span>(<span class="string">&#x27;img,svg,canvas&#x27;</span>) || text &lt; <span class="number">12</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>svg、canvas、math、MathJax、katex、ruby 等直接判复杂；文字很少却带背景图、或含绝对定位子元素的容器也算复杂——这类节点在 Word 里没法用原生元素还原，截图最稳。</p>
+<p>文字 run 则完整保留计算样式：字体自动区分中西文（ascii 走 Times New Roman，eastAsia 识别宋体 &#x2F; 黑体 &#x2F; 楷体 &#x2F; 仿宋 &#x2F; 微软雅黑等）、字号、加粗、斜体、颜色、上下标，下划线连单线、<strong>波浪线</strong>（<code>&lt;w:u w:val=&quot;wave&quot;&gt;</code>）和<strong>点线</strong>（<code>&lt;w:em&gt;</code>）都对应到了 Word 原生属性。</p>
+<p>表格转换保留了 colSpan &#x2F; rowSpan &#x2F; vMerge、边框粗细与颜色、垂直对齐，列宽按 twips（1 twip &#x3D; 635 EMU）依页面比例换算；选项表（<code>name=&quot;optionsTable&quot;</code>）按 5000 pct 宽度铺满页面。每题外面还包了一层 Word 内容控件（<code>&lt;w:sdt&gt;</code>），在 Word 里可以整题选中、整体移动。</p>
+<p>组卷网特有的几个坑，脚本都专门处理了：</p>
 <ol>
-<li><strong>公共 API</strong>：如 <code>https://netease-cloud-music-api.fe-mm.com</code>，开箱即用，但不受你控制</li>
-<li><strong>自建 API</strong>：在你的服务器上部署 NeteaseCloudMusicApi，配 HTTPS 域名和 443 端口，再用 Cloudflare DNS 代理</li>
+<li><strong><code>&lt;bk&gt;</code> 填空标签</strong>：转成下划线空位；<code>&lt;bk&gt;42&lt;/bk&gt;</code> 这种预设了答案的，会按位数居中补足下划线，尽量贴近卷面效果；</li>
+<li><strong>完形 &#x2F; 七选五选项识别</strong>：选项常常是一坨没有分隔的文本（<code>1.A.xx B.xx</code>）或一个 <code>display:table</code> 的容器。脚本先用正则把「题号 + 3~7 个 A 起连续选项」的结构解析出来，再生成真正的 Word 选项表格；相邻且列数相同的选项表还会自动合并，不会切成一堆小表格；</li>
+<li><strong>图片内联</strong>：跨域图片先 CORS fetch 成 dataURL 再塞进 docx，并且强制 <code>decode()</code> 校验，图片没解码完直接抛错停工——理由和 PDF 一样：<strong>不漏题比导得快重要</strong>。</li>
 </ol>
-<blockquote>
-<p>注意：Cloudflare Pages Functions 发出的 <code>fetch</code> 请求<strong>必须是 HTTPS</strong>。如果你的上游是裸 <code>http://IP:3000</code>，Cloudflare 会返回 522，Function 直接 502。</p>
-</blockquote>
-<h2 id="安全要点"><a href="#安全要点" class="headerlink" title="安全要点"></a>安全要点</h2><ul>
-<li><strong>Cookie 永远不进仓库</strong>：只通过 Cloudflare Pages 加密机密注入，代码里只有 <code>env.NETEASE_COOKIE</code> 的引用</li>
-<li><strong>Cookie 可选</strong>：Function 在没有配置 Cookie 时也能匿名工作，配置后自动带上会员凭证</li>
-<li><strong>音频 URL 强制 HTTPS</strong>：网易云返回的音频地址有时是 HTTP，Function 会自动替换成 HTTPS，避免浏览器混合内容拦截</li>
-<li><strong>缓存策略</strong>：响应带 5 分钟 <code>cache-control</code>，减少对上游的重复请求</li>
+<div class="note info flat"><p>docx 里的图片定位用 EMU 单位（914400 EMU &#x3D; 1 英寸）。行内小图（比如行内公式）会用 <code>&lt;w:position&gt;</code> 做垂直居中微调，否则公式在 Word 里会「浮」在文字基线上方，版面发飘。</p>
+</div>
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ol>
+<li>安装 Tampermonkey（或暴力猴等油猴管理器）；</li>
+<li>新建脚本，粘贴仓库里的 <code>组卷网试卷导出.user.js</code> 全文，保存；</li>
+<li>打开任意组卷网试卷详情页，右上角即出现浮动面板；</li>
+<li>勾选「包含答案和解析」时仅支持 PDF（Word 按钮会自动禁用）；Word 默认「可编辑文字＋局部图片」，兼容性优先可切「整题图片」。</li>
+</ol>
+<p>完整源码在 GitHub：<strong><a href="https://github.com/uqayiyufog07-eng/zujuan-export">https://github.com/uqayiyufog07-eng/zujuan-export</a></strong></p>
+<details class="folding-tag" ><summary> 后续：从油猴脚本到网页版 </summary>
+              <div class='content'>
+              <p>不是人人都会装油猴脚本。后来这套解析 &#x2F; 导出逻辑被原样搬进了一个纯静态单页，用 Cloudflare Pages Functions 做服务端代理解决跨域与登录态，部署成了 <a href="https://zujuan.laoqian303.top/">https://zujuan.laoqian303.top</a> ——无需油猴、无需扩展，粘贴试卷网址就能导出，文件还会归档到 R2。油猴脚本本身也在仓库里完整存档，作为最初的实现参考。脚本里预留的 <code>window.__ZujuanAppSaveDocx</code>、<code>window.__ZujuanAppPrintPdf</code> 两个钩子，就是给网页版复用的接口。</p>
+              </div>
+            </details>
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li>项目仓库（含网页版与本脚本）：<a href="https://github.com/uqayiyufog07-eng/zujuan-export">https://github.com/uqayiyufog07-eng/zujuan-export</a></li>
+<li>网页版在线使用：<a href="https://zujuan-export.pages.dev/">https://zujuan-export.pages.dev</a></li>
+<li>html2canvas：<a href="https://html2canvas.hertzen.com/">https://html2canvas.hertzen.com</a></li>
+<li>Office Open XML（WordprocessingML）文档：<a href="https://learn.microsoft.com/zh-cn/office/open-xml/">https://learn.microsoft.com/zh-cn/office/open-xml/</a></li>
 </ul>
-<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>博客音乐馆加载你自己的网易云歌单，播放完整版歌曲，前端代码里看不到任何 Cookie。</p>
-<p>部署命令一条就够：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm run build &amp;&amp; npx wrangler pages deploy public \</span><br><span class="line">  --project-name 你的项目名 --branch main</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>建站</category>
+        <category>技术</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
-        <tag>Cloudflare</tag>
-        <tag>网易云音乐</tag>
+        <tag>油猴脚本</tag>
+        <tag>Tampermonkey</tag>
+        <tag>JavaScript</tag>
+        <tag>组卷网</tag>
       </tags>
   </entry>
   <entry>
@@ -483,123 +716,10 @@
         <category>建站</category>
       </categories>
       <tags>
-        <tag>安知鱼</tag>
         <tag>Hexo</tag>
+        <tag>安知鱼</tag>
         <tag>博客搭建</tag>
         <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一封写给六班的数字情书｜我用一整个周末，给毕业班做了一座&quot;会动&quot;的纪念网站</title>
-    <url>/2026/08/10/class/</url>
-    <content><![CDATA[<blockquote>
-<p>项目地址：<a href="https://class.laoqian303.top/">https://class.laoqian303.top</a><br>源码仓库：<a href="https://github.com/uqayiyufog07-eng/graduation-website">https://github.com/uqayiyufog07-eng/graduation-website</a></p>
-</blockquote>
-<hr>
-<h2 id="缘起：毕业那天，我想留下点不一样的东西"><a href="#缘起：毕业那天，我想留下点不一样的东西" class="headerlink" title="缘起：毕业那天，我想留下点不一样的东西"></a>缘起：毕业那天，我想留下点不一样的东西</h2><p>毕业典礼结束的那个傍晚，教室黑板上还留着没擦干净的名字，窗外是六月潮湿的风。我突然意识到：六年同窗，就要散落在不同的城市、不同的学校、不同的命运里了。</p>
-<p>拍照？太轻。写同学录？太旧。</p>
-<p>我想做一座<strong>永远在线</strong>的小屋——把每一位老师的笑、每一位同学的脸、每一段藏在抽屉里的悄悄话，都装进去，让它们在互联网的边缘节点上，被风一吹，就一直亮着。</p>
-<p>于是，「永远的六班」诞生了：<a href="https://class.laoqian303.top/">https://class.laoqian303.top</a></p>
-<hr>
-<h2 id="我希望它是什么样子"><a href="#我希望它是什么样子" class="headerlink" title="我希望它是什么样子"></a>我希望它是什么样子</h2><p>毕业纪念网站这件事，圈子里已有不少前辈做过。但我不想做一个 PPT 式的页面：照片一摆、名字一列、寄语一抄，结束。</p>
-<p>我希望它——</p>
-<ul>
-<li><strong>有温度</strong>：每一张照片都能”活”过来，每一句悄悄话都像真的被装进信封里寄出；</li>
-<li><strong>有科技感</strong>：典礼当晚，大屏能被全班的祝福”刷屏”，弹幕一条条划过，像新年烟花；</li>
-<li><strong>能永久保留</strong>：哪怕十年后大家各奔东西，只要域名续费，这个小屋就还在。</li>
-</ul>
-<p>带着这三条执念，我开干了。</p>
-<hr>
-<h2 id="设计语言：新粗野主义-×-手绘插画"><a href="#设计语言：新粗野主义-×-手绘插画" class="headerlink" title="设计语言：新粗野主义 × 手绘插画"></a>设计语言：新粗野主义 × 手绘插画</h2><p>整个网站的视觉走的是 <strong>Neobrutalism（新粗野主义）</strong> 路线——粗黑描边、撞色块、硬阴影、不做作。但在粗野的骨架上，我铺了一层手绘插画的皮肤：圆角的便签、心形火漆印章、拍立得相框……</p>
-<p>这种”粗野 + 柔软”的反差，正是少年感的样子——外表满不在乎，内里全是真心。</p>
-<p>颜色上，我准备了两套主题：</p>
-<ul>
-<li><strong>梦幻暮光磨砂玻璃</strong>：晚自习窗外的紫粉色天光；</li>
-<li><strong>粗野主义插画</strong>：课桌涂鸦的彩色记号笔。</li>
-</ul>
-<p>主题可以在前台一键切换，每一位访客都能找到属于自己的那束光。</p>
-<hr>
-<h2 id="四个核心板块，每一块都有故事"><a href="#四个核心板块，每一块都有故事" class="headerlink" title="四个核心板块，每一块都有故事"></a>四个核心板块，每一块都有故事</h2><h3 id="🎓-恩师风采与同学录"><a href="#🎓-恩师风采与同学录" class="headerlink" title="🎓 恩师风采与同学录"></a>🎓 恩师风采与同学录</h3><p>不是简单的名片墙。每位老师、每位同学都有自己的档案页：所教科目、成长历程、荣誉标签、联系方式、毕业寄语。像一本可以被翻很多年的小册子。</p>
-<h3 id="🎨-AI-二次元头像定制（这是我最得意的部分）"><a href="#🎨-AI-二次元头像定制（这是我最得意的部分）" class="headerlink" title="🎨 AI 二次元头像定制（这是我最得意的部分）"></a>🎨 AI 二次元头像定制（这是我最得意的部分）</h3><p>接入了<strong>豆包 Seedream 5.0</strong> 大模型。上传一张证件照，AI 会把它重绘成清新动漫插画头像。展示页面上，原图 &#x2F; AI 插画可以一键双态切换——</p>
-<blockquote>
-<p>一秒是穿校服的你，一秒是二次元世界里那个更明亮的你。</p>
-</blockquote>
-<p>技术上这块踩了不少坑：原图要分块转 Base64 喂给模型、生成结果要再下载回 R2 持久化、还要保证前端切换不卡。但看到第一个同学的头像被 AI “画” 出来的瞬间，我觉得这些都值了。</p>
-<h3 id="🚀-现场实时弹幕墙"><a href="#🚀-现场实时弹幕墙" class="headerlink" title="🚀 现场实时弹幕墙"></a>🚀 现场实时弹幕墙</h3><p>毕业晚会当晚，大屏上挂着这个网站。同学们掏出手机扫码，发出的祝福会以彩色弹幕的形式<strong>实时</strong>划过大屏幕——没有刷新、没有轮询，全靠腾讯云开发 TCB 的 <code>.watch()</code> 长连接推流。</p>
-<p>那一刻，全班同学的祝福在大屏上此起彼伏，比任何 PPT 都震撼。</p>
-<h3 id="💌-悄悄话留言板（心意信封）"><a href="#💌-悄悄话留言板（心意信封）" class="headerlink" title="💌 悄悄话留言板（心意信封）"></a>💌 悄悄话留言板（心意信封）</h3><p>这是我最舍不得删的板块。</p>
-<p>每一句悄悄话都被装进一个<strong>拟物化的实体信封</strong>里：信封会随着鼠标轻微 3D 倾斜，像被风托着；封口是一枚我亲手用 SVG 重画的心形火漆印章；点开发送时，纸屑喷洒（Confetti）会从屏幕上方炸开——</p>
-<blockquote>
-<p>像毕业那天，终于鼓起勇气把信递出去的瞬间。</p>
-</blockquote>
-<p>未登录用户会被温柔引导，已登录用户可以直接投递。一切都按”真心”来设计。</p>
-<h3 id="🖼️-时光相册与拍立得画廊"><a href="#🖼️-时光相册与拍立得画廊" class="headerlink" title="🖼️ 时光相册与拍立得画廊"></a>🖼️ 时光相册与拍立得画廊</h3><p>拍立得式照片墙，支持灯箱大图浏览。管理员上传的照片同样可以一键 AI 插画加工，把日常瞬间变成艺术纪念。</p>
-<hr>
-<h2 id="技术架构：为什么这么选"><a href="#技术架构：为什么这么选" class="headerlink" title="技术架构：为什么这么选"></a>技术架构：为什么这么选</h2><p>整个项目我没用 React&#x2F;Vue 之类的框架，前台是<strong>原生 ES6+ Vanilla JS</strong>。原因很简单：</p>
-<blockquote>
-<p>毕业纪念网站应该像一封信，而不是一个 App。它要轻、要快、要在任何破旧手机上都能秒开。</p>
-</blockquote>
-<p>后端则用了三家云服务的组合拳：</p>
-<table>
-<thead>
-<tr>
-<th>层</th>
-<th>选型</th>
-<th>干什么</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>实时数据库</td>
-<td><strong>腾讯云开发 TCB NoSQL</strong></td>
-<td>存同学录、弹幕、悄悄话、画廊，靠 <code>.watch()</code> 实现实时推流</td>
-</tr>
-<tr>
-<td>静态托管</td>
-<td><strong>Cloudflare Pages</strong></td>
-<td>全球 CDN 边缘节点分发，海外访问也飞快</td>
-</tr>
-<tr>
-<td>计算 &amp; 存储</td>
-<td><strong>Cloudflare Workers + R2 + KV</strong></td>
-<td>图片上传、R2 读写、豆包 AI 图生图代理、KV 状态缓存</td>
-</tr>
-</tbody></table>
-<p>为什么不全用一家？因为我希望这个小屋<strong>真的能活十年</strong>——三家服务都免费额度充足、生态稳定，任何一家出问题，迁移成本都可控。这是我能想到的、最浪漫的”工程化保险”。</p>
-<hr>
-<h2 id="一些藏在细节里的小心思"><a href="#一些藏在细节里的小心思" class="headerlink" title="一些藏在细节里的小心思"></a>一些藏在细节里的小心思</h2><ul>
-<li><strong>光标彩虹拖尾</strong>：鼠标划过，留下一道彩虹，像小时候在课桌上划过的彩色笔；</li>
-<li><strong>点击爆炸特效</strong>：每一次点击都有粒子炸开，让浏览本身变成一种游戏；</li>
-<li><strong>纸张坠落物理算法</strong>：悄悄话信封的摆动不是 CSS 动画硬写，而是模拟纸张在微风中的物理运动；</li>
-<li><strong>3D Parallax 视差</strong>：信封会随鼠标方向轻微倾斜，像真的被光打过；</li>
-<li><strong>完全响应式</strong>：从 320px 的小屏到 4K 大屏，都好看。</li>
-</ul>
-<hr>
-<h2 id="部署它，你也能复制一座小屋"><a href="#部署它，你也能复制一座小屋" class="headerlink" title="部署它，你也能复制一座小屋"></a>部署它，你也能复制一座小屋</h2><p>整个项目已开源在 GitHub，README 里有完整的部署指南：</p>
-<ol>
-<li>配置腾讯云开发 TCB 数据库（4 个集合）；</li>
-<li>部署 Cloudflare Worker（R2 + KV + 豆包 API Key）；</li>
-<li>改 <code>js/config.js</code> 里的三个地址；</li>
-<li>把静态文件丢到 Cloudflare Pages。</li>
-</ol>
-<p><strong>十分钟，你也能给你的班级搭一座永远在线的纪念屋。</strong></p>
-<hr>
-<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>域名 <code>class.laoqian303.top</code> 我会续十年。</p>
-<p>希望十年后，当某位同学在某个深夜加班的间隙，无意间打开这个网址——</p>
-<p>弹幕还能划过，<br>信封还能打开，<br>AI 头像里的那个少年还会冲他笑，<br>晚自习窗外的紫粉色天光，还会亮着。</p>
-<p><strong>六班，毕业快乐。</strong></p>
-<blockquote>
-<p>🌐 逛逛这座小屋：<a href="https://class.laoqian303.top/">https://class.laoqian303.top</a><br>💻 源码与部署指南：<a href="https://github.com/uqayiyufog07-eng/graduation-website">https://github.com/uqayiyufog07-eng/graduation-website</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>项目</category>
-      </categories>
-      <tags>
-        <tag>Cloudflare</tag>
-        <tag>网站开发</tag>
-        <tag>腾讯云</tag>
-        <tag>AI</tag>
-        <tag>毕业纪念</tag>
       </tags>
   </entry>
 </search>
